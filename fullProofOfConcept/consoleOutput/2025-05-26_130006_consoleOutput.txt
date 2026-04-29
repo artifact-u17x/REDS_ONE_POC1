@@ -1,0 +1,150 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250526130006
+Username: [ANONYMISED]
+RunAs User: [ANONYMISED]
+Configuration Name: 
+Machine: [ANONYMISED] (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell -command Start-Transcript -Path 'consoleOutput\2025-05-26_130006_consoleOutput.txt' -Append; & '.\updateModel.bat'; Stop-Transcript
+Process ID: 30928
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is consoleOutput\2025-05-26_130006_consoleOutput.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  229k  100  228k  100   184   317k    255 --:--:-- --:--:-- --:--:--  318k
+Response code is:
+200
+File downloaded successfully as daily_build.zip
+        1 file(s) moved.
+Extracted file moved to .\cellingBatches\2025-05-26_130007_garden-celling-41191c14-5628-4bd3-b2d8-ee022657786c.csv
+Running R model update script...
+Loading required package: Rcpp
+This is rstanarm version 2.32.1
+- See https://mc-stan.org/rstanarm/articles/priors for changes to default priors!
+- Default priors may change, so it's safest to specify priors, even if equivalent to the defaults.
+- For execution on a local, multicore CPU with excess RAM we recommend calling
+  options(mc.cores = parallel::detectCores())
+This is bayesplot version 1.12.0
+- Online documentation and vignettes at mc-stan.org/bayesplot
+- bayesplot theme set to bayesplot::theme_default()
+   * Does _not_ affect other ggplot2 plots
+   * See ?bayesplot_theme_set for details on theme setting
+Type 'citation("pROC")' for a citation.
+
+Attaching package: 'pROC'
+
+The following objects are masked from 'package:stats':
+
+    cov, smooth, var
+
+Loading required package: Matrix
+./cellingBatches/2025-05-25_130007_garden-celling-5ed2bc82-e447-49ee-b834-8293b11b446e.csv contains no gardens, skipping
+
+REDS batches contain 56841 rows and 30 columns
+Number of unique batches: 5
+Number of unique gardens: 71
+Gardens are: 4f340640-5011-422e-983f-4bb7f9b03deb d35585bd-7e51-4c88-bcfb-954e0901b455 6b81e829-e1a5-47c5-9259-3ae7bea52
+087 6c71924c-fd74-4b1e-99e3-c2de57acceb0 79846938-4984-4223-86be-891073cbaeeb 8216bf24-7459-4bf2-b5d5-d314b74920a2 aaa63
+b7e-e414-46ef-bc6e-ef503aa6b3a9 fec8df66-c5b8-4f15-a42f-bb2fd9a8bac5 2cbddd08-5bc6-4b26-9262-252e887e5dc0 2fc09eeb-9953-
+49fb-9261-33f538844ec1 1fa613bb-cd3f-411f-b41b-d33bb13d68a4 76258afd-bed2-415e-9332-c9b16f7fafa0 8aa1abc9-564a-4f1e-8649
+-a43950e8310d f42e7cdb-165a-495e-8f24-037453cc7ad3 de47f992-a606-46e7-adaa-d5b9d2fcfdf5 507f0bdc-c5f6-427b-8283-86e13992
+c6ed 4e1c873d-430e-414d-9b35-56a4f773279c 46b1856c-8cf2-46f6-828e-0976c9c988f6 dc858cf3-f2a6-4a95-b0db-27427653d355 2f6c
+7b60-b462-4f53-833b-8679fdc9f7a2 1627a689-82b3-45e1-b654-c4bd6d4a74e6 c80e2b8f-7d5d-4c0b-809a-26209407e058 d1140e72-bda5
+-475c-928c-b63e24878a88 49a29b88-7501-4753-9dc2-3f3efb6cf5f8 cdabc651-1597-4230-98af-3a7a975468ef 985d8789-c992-4f2c-bc5
+b-a776048e7bc7 61eedba0-75ad-4095-a829-a174c801fcc9 98f91db8-b6b7-4e44-afc8-3fb7112574c1 0379257d-7e21-43d6-af5f-d9acc7a
+fced9 289cb84b-5dc6-47d1-a304-01003fc90314 f79569ff-15df-4e4c-bfe8-b464462587b7 16f33d9d-63cb-41ff-be44-8af39065a883 57e
+d2b5b-6b7c-4cb2-a181-98d099231618 c391b94b-483a-45bf-ad3f-ae33ca3dee36 f9cc2e5a-c962-4d82-9d08-cc7ce260c617 670ba65f-155
+3-41a3-b121-bb9c2353e8a3 f1601a57-082d-4b15-9171-86112fda8e2c d143de16-90d6-4212-8f5a-c261bf2734f0 8d216b43-748f-458f-8d
+7e-d7a66f590a52 03016d2b-2207-4404-8eaa-37cc13bfc8bc ec7e9962-e65c-4f04-9049-a9321e380c55 965ffdf6-24ce-4dbe-a6a7-5533ea
+42eaea 5125f85f-922a-44df-b626-fa0259a12667 f4ba96da-4d15-4150-9f93-69e34f5a127e f9c4c3b2-46c6-414d-b93d-88094679d14e 43
+6c8279-3b6d-47d8-b802-606d2c15ba3f 0cf66c90-3d9a-4a14-af22-5c941ace3d44 3320fdae-d384-4118-916d-c34ae595ac18 113d24bd-26
+42-462b-aa93-d5e9a024cb8f cc18f4bb-c4fb-4ff0-bc9a-1d46dc9ce929 49856dd1-ef53-4c44-b849-f40828b93caf 48e720a2-d636-4c49-a
+c5e-aeece5734853 9bb4ed4e-1f93-468d-8a12-fb6a526e86cf 1caef7ed-02ed-4e54-b352-7d60c1cdccbc f6a00867-44ec-47ec-8dc3-60aba
+bbffd1e ec3589b0-882a-45a2-87ea-35e232303032 01b26bec-ad13-4a3d-8d8d-e153f442f9c6 e8eb91c3-74d6-4b1b-95d0-223be5945fdd e
+977326b-6ce8-4f5e-b9b1-3ed7df4aa5b7 4822bc1e-dbfe-41c4-a391-c59875418de1 638bb688-259f-46cd-84ad-3c778037c7ed 2c23ed2c-d
+96d-4f6f-b0b6-5bddc1d32678 e4b7a544-aa73-4588-b608-823a102e918c 0945f98a-3ac2-4c73-8b18-0c046f7df162 04b62292-9be8-4f0d-
+b927-87ba02d082c7 3dd7e1f7-456b-4255-84ae-d26124524cae 5c410edb-c7c9-4533-ad1e-42908a07f3b8 adb5d46d-4bdd-43fb-a856-83c4
+8a2d16fd 741c45a8-520d-41c2-9c58-9c8891258f61 dc71c4e7-08b7-4936-b4ba-2e88dd42e5ce 720914ce-3273-4078-9efb-b103e966ad11
+
+Top left of data:
+                           garden.guid        country realness  version
+1 4f340640-5011-422e-983f-4bb7f9b03deb United Kingdom     real existing
+2 4f340640-5011-422e-983f-4bb7f9b03deb United Kingdom     real existing
+3 4f340640-5011-422e-983f-4bb7f9b03deb United Kingdom     real existing
+4 4f340640-5011-422e-983f-4bb7f9b03deb United Kingdom     real existing
+5 4f340640-5011-422e-983f-4bb7f9b03deb United Kingdom     real existing
+6 4f340640-5011-422e-983f-4bb7f9b03deb United Kingdom     real existing
+
+SAMPLING FOR MODEL 'bernoulli' NOW (CHAIN 1).
+Chain 1:
+Chain 1: Gradient evaluation took 0.011553 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 115.53 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1:
+Chain 1:
+Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 1:
+Chain 1:  Elapsed Time: 6414.23 seconds (Warm-up)
+Chain 1:                4419 seconds (Sampling)
+Chain 1:                10833.2 seconds (Total)
+Chain 1:
+
+SAMPLING FOR MODEL 'bernoulli' NOW (CHAIN 2).
+Chain 2: Rejecting initial value:
+Chain 2:   Log probability evaluates to log(0), i.e. negative infinity.
+Chain 2:   Stan can't start sampling from this initial value.
+Chain 2:
+Chain 2: Gradient evaluation took 0.008856 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 88.56 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2:
+Chain 2:
+Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 2:
+Chain 2:  Elapsed Time: 8212.48 seconds (Warm-up)
+Chain 2:                9721.04 seconds (Sampling)
+Chain 2:                17933.5 seconds (Total)
+Chain 2:
+Warning message:
+Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable.
+Running the chains for more iterations may help. See
+https://mc-stan.org/misc/warnings.html#bulk-ess
+Successfully created newlyUpdatedModel.R
+R script execution completed.
+Uploading updated model
+        1 file(s) copied.
+{"status":"success"}
+**********************
+Windows PowerShell transcript end
+End time: 20250526210003
+**********************

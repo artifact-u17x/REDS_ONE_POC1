@@ -1,0 +1,134 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250521130005
+Username: [ANONYMISED]
+RunAs User: [ANONYMISED]
+Configuration Name: 
+Machine: [ANONYMISED] (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell -command Start-Transcript -Path 'consoleOutput\2025-05-21_130005_consoleOutput.txt' -Append; & '.\updateModel.bat'; Stop-Transcript
+Process ID: 37280
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is consoleOutput\2025-05-21_130005_consoleOutput.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  169k  100  169k  100   184   231k    250 --:--:-- --:--:-- --:--:--  231k
+Response code is:
+200
+File downloaded successfully as daily_build.zip
+        1 file(s) moved.
+Extracted file moved to .\cellingBatches\2025-05-21_130006_garden-celling-59429ca4-3ac3-4a1b-8cac-d7fae8231289.csv
+Running R model update script...
+Loading required package: Rcpp
+This is rstanarm version 2.32.1
+- See https://mc-stan.org/rstanarm/articles/priors for changes to default priors!
+- Default priors may change, so it's safest to specify priors, even if equivalent to the defaults.
+- For execution on a local, multicore CPU with excess RAM we recommend calling
+  options(mc.cores = parallel::detectCores())
+This is bayesplot version 1.12.0
+- Online documentation and vignettes at mc-stan.org/bayesplot
+- bayesplot theme set to bayesplot::theme_default()
+   * Does _not_ affect other ggplot2 plots
+   * See ?bayesplot_theme_set for details on theme setting
+Type 'citation("pROC")' for a citation.
+
+Attaching package: 'pROC'
+
+The following objects are masked from 'package:stats':
+
+    cov, smooth, var
+
+Loading required package: Matrix
+REDS batches contain 18501 rows and 30 columns
+Number of unique batches: 2
+Number of unique gardens: 29
+Gardens are: 436c8279-3b6d-47d8-b802-606d2c15ba3f 0cf66c90-3d9a-4a14-af22-5c941ace3d44 3320fdae-d384-4118-916d-c34ae595a
+c18 113d24bd-2642-462b-aa93-d5e9a024cb8f 8d003cae-8c98-4e33-a40b-2c2077a3b534 cc18f4bb-c4fb-4ff0-bc9a-1d46dc9ce929 49856
+dd1-ef53-4c44-b849-f40828b93caf 48e720a2-d636-4c49-ac5e-aeece5734853 9bb4ed4e-1f93-468d-8a12-fb6a526e86cf 3f15ab9f-6f80-
+4204-b4e2-1b7d2d57b188 1caef7ed-02ed-4e54-b352-7d60c1cdccbc f6a00867-44ec-47ec-8dc3-60ababbffd1e ec3589b0-882a-45a2-87ea
+-35e232303032 01b26bec-ad13-4a3d-8d8d-e153f442f9c6 e8eb91c3-74d6-4b1b-95d0-223be5945fdd e977326b-6ce8-4f5e-b9b1-3ed7df4a
+a5b7 4822bc1e-dbfe-41c4-a391-c59875418de1 638bb688-259f-46cd-84ad-3c778037c7ed 2c23ed2c-d96d-4f6f-b0b6-5bddc1d32678 e4b7
+a544-aa73-4588-b608-823a102e918c 0945f98a-3ac2-4c73-8b18-0c046f7df162 04b62292-9be8-4f0d-b927-87ba02d082c7 3dd7e1f7-456b
+-4255-84ae-d26124524cae 5c410edb-c7c9-4533-ad1e-42908a07f3b8 adb5d46d-4bdd-43fb-a856-83c48a2d16fd 741c45a8-520d-41c2-9c5
+8-9c8891258f61 98de9891-ba2d-428a-94e7-4d83a268f404 dc71c4e7-08b7-4936-b4ba-2e88dd42e5ce 720914ce-3273-4078-9efb-b103e96
+6ad11
+Top left of data:
+                           garden.guid        country realness  version
+1 436c8279-3b6d-47d8-b802-606d2c15ba3f United Kingdom     real existing
+2 436c8279-3b6d-47d8-b802-606d2c15ba3f United Kingdom     real existing
+3 436c8279-3b6d-47d8-b802-606d2c15ba3f United Kingdom     real existing
+4 436c8279-3b6d-47d8-b802-606d2c15ba3f United Kingdom     real existing
+5 436c8279-3b6d-47d8-b802-606d2c15ba3f United Kingdom     real existing
+6 436c8279-3b6d-47d8-b802-606d2c15ba3f United Kingdom     real existing
+
+SAMPLING FOR MODEL 'bernoulli' NOW (CHAIN 1).
+Chain 1: Rejecting initial value:
+Chain 1:   Log probability evaluates to log(0), i.e. negative infinity.
+Chain 1:   Stan can't start sampling from this initial value.
+Chain 1:
+Chain 1: Gradient evaluation took 0.003623 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 36.23 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1:
+Chain 1:
+Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 1:
+Chain 1:  Elapsed Time: 798.807 seconds (Warm-up)
+Chain 1:                683.023 seconds (Sampling)
+Chain 1:                1481.83 seconds (Total)
+Chain 1:
+
+SAMPLING FOR MODEL 'bernoulli' NOW (CHAIN 2).
+Chain 2: Rejecting initial value:
+Chain 2:   Log probability evaluates to log(0), i.e. negative infinity.
+Chain 2:   Stan can't start sampling from this initial value.
+Chain 2:
+Chain 2: Gradient evaluation took 0.003087 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 30.87 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2:
+Chain 2:
+Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 2:
+Chain 2:  Elapsed Time: 834.893 seconds (Warm-up)
+Chain 2:                665.494 seconds (Sampling)
+Chain 2:                1500.39 seconds (Total)
+Chain 2:
+Successfully created newlyUpdatedModel.R
+R script execution completed.
+Uploading updated model
+        1 file(s) copied.
+{"status":"success"}
+**********************
+Windows PowerShell transcript end
+End time: 20250521135004
+**********************

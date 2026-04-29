@@ -1,0 +1,22 @@
+================================================================================
+SUMMARY
+================================================================================
+
+Classification                                        Count    % of Success
+-------------------------------------------------- -------- ---------------
+Urban: Nearer to a major town or city                    46           85.2%
+Larger rural: Nearer to a major town or city              4            7.4%
+Smaller rural: Further from a major town or city          3            5.6%
+Smaller rural: Nearer to a major town or city             1            1.9%
+-------------------------------------------------- -------- ---------------
+TOTAL SUCCESSFUL                                         54          100.0%
+
+FAILED CLASSIFICATIONS:                           
+  SCOTLAND_NOT_IN_EW_RUC                                 11 (15.5% of all)
+  NOT_MATCHED_IN_RUC                                      3 (4.2% of all)
+  NO_POSTCODE_FOUND                                       3 (4.2% of all)
+-------------------------------------------------- --------
+TOTAL FAILED                                             17
+
+GRAND TOTAL                                              71
+================================================================================

@@ -1,0 +1,11 @@
+Metrics	Observed	No sparrow	Sparrow	No sparrow	Sparrow
+	No sparrow	71.0%	7.3%	71.9%	6.4%
+	Sparrow	18.2%	3.5%	17.4%	4.3%
+Discrimination threshold			0.74		0.48
+False positive rate (FPR)			9.3%		8.2%
+True positive rate (TPR)			16.0%		19.7%
+Positive likelihood ratio (PLR=TPR/FPR)			1.72		2.40
+Matthews correlation coefficient (MCC)			0.09		0.15
+Overall Brier score (lower is better)			0.31		0.19
+Discrimination decomposition (higher is better)			0.04		0.05
+Miscalibration decomposition (lower is better)			0.22		0.11

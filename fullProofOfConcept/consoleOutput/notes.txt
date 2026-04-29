@@ -1,0 +1,30 @@
+One day 3, 22/5, the computer slept after starting the model run (completing when the computer woke, so the only implication is a longer run time). This log helps us to understand how this would have affected the run time of the model:
+
+PS C:\Windows\system32> Get-WinEvent -FilterHashtable @{LogName='System'; ID=42,1,107} -MaxEvents 50 | Format-Table TimeCreated, Id, LevelDisplayName, Message -Wrap
+
+TimeCreated          Id LevelDisplayName Message
+-----------          -- ---------------- -------
+22/05/2025 13:26:39   1 Information      Secure Trustlet \??\C:\Windows\system32\BioIso.exe Id 4 and Pid 40156 started
+                                         with status STATUS_SUCCESS.
+22/05/2025 13:26:25   1 Information      The system has returned from a low power state.
+
+                                         Sleep Time: ‎2025‎-‎05‎-‎22T11:08:03.093789700Z
+                                         Wake Time: ‎2025‎-‎05‎-‎22T11:26:24.635749100Z
+
+                                         Wake Source: Unknown
+22/05/2025 13:26:24   1 Information      Wake from sleep detected.
+22/05/2025 13:26:22   1 Information      The system time has changed to ‎2025‎-‎05‎-‎22T11:26:22.500000000Z from
+                                         ‎2025‎-‎05‎-‎22T11:08:07.967831700Z.
+                                         Time Delta: 1094532 ms
+
+                                         Change Reason: System time synchronized with the hardware clock.
+                                         Process: '' (PID 4).
+
+                                         RTC time: ‎2025‎-‎05‎-‎22T13:26:22.500000000Z
+                                         Current time zone bias: -120
+                                         RTC time is in UTC: false
+                                         System time was based on RTC time: false
+22/05/2025 13:08:07 107 Information      The system has resumed from sleep.
+22/05/2025    42 Information      The system is entering sleep.
+
+                                         Sleep Reason: Hibernate from Sleep - Fixed Timeout
