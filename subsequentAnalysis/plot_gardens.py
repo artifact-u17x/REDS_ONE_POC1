@@ -7,7 +7,7 @@ import geopandas as gpd
 from collections import defaultdict
 
 # Read the CSV file
-df = pd.read_csv('garden_coordinates_rural_urban.csv')
+df = pd.read_csv('garden_coordinates_rural_urban_region.csv')
 
 
 # Create Rural/Urban/Unknown category based on RUC21NM column

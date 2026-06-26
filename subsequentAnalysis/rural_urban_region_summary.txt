@@ -1,0 +1,65 @@
+================================================================================
+SUMMARY: Rural/Urban Classification (RUC 2021)
+================================================================================
+
+Classification                                        Count    % of Success
+-------------------------------------------------- -------- ---------------
+Urban: Nearer to a major town or city                    49           86.0%
+Larger rural: Nearer to a major town or city              4            7.0%
+Smaller rural: Further from a major town or city          3            5.3%
+Smaller rural: Nearer to a major town or city             1            1.8%
+-------------------------------------------------- -------- ---------------
+TOTAL SUCCESSFUL                                         57          100.0%
+
+FAILED CLASSIFICATIONS:                           
+  SCOTLAND_NOT_IN_EW_LOOKUP                              11 (15.5% of all)
+  NO_POSTCODE_FOUND                                       3 (4.2% of all)
+-------------------------------------------------- --------
+TOTAL FAILED                                             14
+
+GRAND TOTAL                                              71
+================================================================================
+
+================================================================================
+SUMMARY: Region (December 2024)
+================================================================================
+
+Classification                                        Count    % of Success
+-------------------------------------------------- -------- ---------------
+South East                                               15           26.8%
+West Midlands                                             7           12.5%
+London                                                    7           12.5%
+East Midlands                                             6           10.7%
+Yorkshire and The Humber                                  6           10.7%
+East of England                                           5            8.9%
+North East                                                4            7.1%
+South West                                                3            5.4%
+North West                                                3            5.4%
+-------------------------------------------------- -------- ---------------
+TOTAL SUCCESSFUL                                         56          100.0%
+
+FAILED CLASSIFICATIONS:                           
+  SCOTLAND_NOT_IN_EW_LOOKUP                              11 (15.5% of all)
+  NO_POSTCODE_FOUND                                       3 (4.2% of all)
+  NOT_MATCHED_IN_RGN24NM_LOOKUP                           1 (1.4% of all)
+-------------------------------------------------- --------
+TOTAL FAILED                                             15
+
+GRAND TOTAL                                              71
+================================================================================
+
+================================================================================
+SUMMARY: Region Band
+================================================================================
+
+Classification                                        Count    % of Success
+-------------------------------------------------- -------- ---------------
+South England                                            27           38.0%
+Mid England and Wales                                    18           25.4%
+North England                                            13           18.3%
+Scotland and Northern Ireland                            13           18.3%
+-------------------------------------------------- -------- ---------------
+TOTAL SUCCESSFUL                                         71          100.0%
+
+GRAND TOTAL                                              71
+================================================================================

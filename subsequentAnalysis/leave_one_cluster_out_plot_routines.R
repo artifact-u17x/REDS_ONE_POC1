@@ -453,15 +453,6 @@ plot_loco <- function(loco_results, glasgow_gardens ) {
   print(combined_plot)
   cat("\n=== Means by Model and Evaluation Data ===\n")
   print(means_table, row.names = FALSE)
-
-  ga_brier <- means_table %>% filter(model_evaluation_data == "Garden Advice")
-  original_brier_ga <- ga_brier$brier_overall[ga_brier$model_training_data == "Original"]
-  updated_brier_ga  <- ga_brier$brier_overall[ga_brier$model_training_data == "Updated"]
-  delta_brier_ga    <- updated_brier_ga - original_brier_ga
-  delta_rmse_ga     <- sqrt(updated_brier_ga) - sqrt(original_brier_ga)
-
-  cat(sprintf("\nΔ Brier score (Garden Advice): %.4f\n", delta_brier_ga))
-  cat(sprintf("Δ RMSE / prob-scale improvement (Garden Advice): %.4f\n", delta_rmse_ga))
   
   # Save plot
   ggsave("brier_plot.png",
